@@ -21,8 +21,6 @@ processing categorical features: highest_education, imd_band
 2. imd_band: students from North Region and Ireland don't have IMD (probably the gov doesn't include those regions)
 - create a column acting as an indicator: IMD missing or not
 - then apply ordinal encoding, filling nulls with median, assuming average
-- why median imputation?
-  + https://vtiya.medium.com/when-to-use-mean-median-mode-imputation-b0fd6be247db
 """
 # 1. highest_education
 # uniq_edu_lvl = np.unique(df["highest_education"])
